@@ -53,9 +53,9 @@ const Subtitle = styled.h3`
 const defaultConfig = {
   projection: 'mercator',
   geographyConfig: {
-    borderColor: '#79b6d2',
-    highlightFillColor: 'rgba(0, 0, 0, 0.3)',
-    highlightBorderColor: '#79b6d2',
+    borderColor: '#91989f',
+    highlightFillColor: '#bdc0ba',
+    highlightBorderColor: '#bdc0ba',
     popupTemplate: (geography, data) => {
       return `<div style="font-family: 'Open Sans'">${geography.properties.name}</div>`
     },
