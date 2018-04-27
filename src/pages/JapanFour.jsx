@@ -20,7 +20,7 @@ export default () => {
     <div>
       <Image src={header} />
       <Section>
-        <LinkedImage src={one} horizontal/>
+        <LinkedImage src={one} horizontal />
         <LinkedImage src={two} horizontal />
       </Section>
       <Section>
@@ -31,7 +31,7 @@ export default () => {
       </Section>
       <Section>
         <LinkedImage src={five} horizontal />
-        <LinkedImage src={six} horizontal/>
+        <LinkedImage src={six} horizontal />
       </Section>
       <Section>
         <LinkedImage src={seven} />
@@ -41,7 +41,7 @@ export default () => {
       </Section>
       <Section>
         <LinkedImage src={nine} horizontal />
-        <LinkedImage src={ten} horizontal/>
+        <LinkedImage src={ten} horizontal />
       </Section>
       <Section>
         <LinkedImage src={eleven} />

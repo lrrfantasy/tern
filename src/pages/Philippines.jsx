@@ -25,12 +25,12 @@ export default () => {
         <LinkedImage src={two} />
       </Section>
       <Section>
-        <LinkedImage src={three} horizontal/>
-        <LinkedImage src={four} horizontal/>
+        <LinkedImage src={three} horizontal />
+        <LinkedImage src={four} horizontal />
       </Section>
       <Section>
         <LinkedImage src={five} horizontal />
-        <LinkedImage src={six} horizontal/>
+        <LinkedImage src={six} horizontal />
       </Section>
       <Section>
         <LinkedImage src={seven} />

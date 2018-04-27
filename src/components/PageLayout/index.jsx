@@ -26,16 +26,16 @@ const Button = styled.div`
     color: black;
   }
 `
+export const Image = styled.img`
+  width: 100%;
+  vertical-align: middle;
+`
 
 export const Section = styled.section`
   margin: 150px 200px;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-`
-
-export const Image = styled.img`
-  width: 100%;
 `
 
 export const LinkedImage = ({src, horizontal}) => {
