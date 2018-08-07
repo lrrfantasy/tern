@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
-import * as d3 from 'd3'
 
 import Map from '../Map'
 
@@ -50,69 +49,14 @@ const Subtitle = styled.h3`
   line-height: 22px;
 `
 
-const defaultConfig = {
-  projection: 'mercator',
-  geographyConfig: {
-    borderColor: '#91989f',
-    highlightFillColor: '#bdc0ba',
-    highlightBorderColor: '#bdc0ba',
-    popupTemplate: (geography, data) => {
-      return `<div style="font-family: 'Open Sans'">${geography.properties.name}</div>`
-    },
-  },
-  fills: {
-    defaultFill: 'transparent',
-    city: '#cd5c5c'
-  }
-}
-
-const bubblesConfig = {
-  borderWidth: 0,
-  fillOpacity: 1,
-  highlightFillColor: '#ff8f8f',
-  highlightBorderWidth: 0,
-  highlightFillOpacity: 1,
-  animate: false,
-  popupTemplate: (geography, data) => {
-    return `<div style="font-family: 'Open Sans'">${data.name}</div>`
-  }
-}
-
-function zoom (center, scale) {
-  return (element) => {
-    const projection = d3.geoMercator()
-      .center(center)
-      .scale(scale)
-      .translate([element.offsetWidth / 2, element.offsetHeight / 2])
-    const path = d3.geoPath(projection)
-    return { path, projection }
-  }
-}
-
 export default class Place extends Component {
   static defaultProps = {
     places: []
   }
 
-  drawCity = (map) => {
-    const { places } = this.props.place
-    const bubbles = places.map(place => {
-      return {
-        name: place.name,
-        radius: 5,
-        fillKey: 'city',
-        latitude: place.latitude,
-        longitude: place.longitude
-      }
-    })
-    map.bubbles(bubbles, bubblesConfig)
-  }
-
   render () {
-    const { zoomCenter, scale, id, name, photoPlace, photoTime } = this.props.place
-    const config =  { ...defaultConfig, ...{
-      setProjection: zoom(zoomCenter, scale),
-    }}
+    const { zoomCenter, scale, id, name, photoPlace, photoTime, places } = this.props.place
+    const config =  { zoomCenter, scale }
     const img = require(`../../images/${id}/00.jpg`)
     const bgStyle = {
       backgroundImage: `url(${img})`
@@ -121,7 +65,7 @@ export default class Place extends Component {
       <Link to={`/${id}`}>
         <PlaceContainer>
           <Cover>
-            <Map config={config} onMapInit={this.drawCity} />
+            <Map config={config} places={places} />
           </Cover>
           <Background style={bgStyle} />
           <TitleGroup>

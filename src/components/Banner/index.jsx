@@ -1,50 +1,84 @@
 import React, { Component } from 'react'
+import {
+  ComposableMap, ZoomableGroup, Geographies, Geography, Lines, Line
+} from 'react-simple-maps'
+import styled from 'styled-components'
 
-import Map from '../Map'
+import buildCurve from '../../utils/buildCurve'
 import countries from '../../data/countries'
 import flights from '../../data/flights'
 
-const defaultConfig = {
-  projection: 'mercator',
-  geographyConfig: {
-    borderColor: '#91989f',
-    popupOnHover: false,
-    highlightOnHover: false
-  },
-  fills: {
-    defaultFill: 'transparent',
-    visited: '#cd5c5c',
-    home: '#f4a7b9'
-  },
-  responsive: true
-}
+const BannerContainer = styled.div`
+  width: 100%;
+  height: 100vh;
+  svg {
+    z-index: -1;
+    position: fixed !important;
+  }
+`
 
-const arcConfig = {
-  strokeColor: '#79b6d2',
-  arcSharpness: 0.8
-  // greatArc: true
+const flightConfig = {
+  default: { stroke: '#79b6d2', fill: 'transparent' },
+  hover: { stroke: '#79b6d2', fill: 'transparent' },
+  pressed: { stroke: '#79b6d2', fill: 'transparent' },
 }
 
 export default class Banner extends Component {
-  renderArc = (map) => {
+  getFlights = (map) => {
     const { cities, routes } = flights
     const arcs = routes.map(({ src, dst }) => ({
-      origin: cities[src],
-      destination: cities[dst]
+      start: cities[src],
+      end: cities[dst]
     }))
-    map.arc(arcs, arcConfig)
+    return arcs
   }
   render () {
-    const config = { ...defaultConfig, ...{
-      data: countries.reduce((prev, cur) => {
-        prev[cur] = { fillKey: 'visited' }
-        return prev
-      }, { CHN: { fillKey: 'home' } })
-    }}
     return (
-      <div>
-        <Map config={config} onMapInit={this.renderArc} banner />
-      </div>
+      <BannerContainer>
+        <ComposableMap
+          style={{
+            width: '100%',
+            height: 'auto',
+          }}>
+          <ZoomableGroup disablePanning>
+            <Geographies geography='/world-50m.json'>
+              {
+                (geographies, projection) => geographies.map(geography => {
+                  const countryConfig = {
+                    fill: countries.includes(geography.id)
+                      ? '#cd5c5c'
+                      : geography.id === 'CHN' ? '#f4a7b9' : 'transparent',
+                    stroke: '#91989f',
+                    strokeWidth: 0.75,
+                    outline: 'none',
+                  }
+                  const countryStyle = {
+                    default: countryConfig,
+                    hover: countryConfig,
+                    pressed: countryConfig,
+                  }
+                  return (
+                    <Geography
+                      key={geography.id}
+                      geography={geography}
+                      projection={projection}
+                      style={countryStyle}
+                    />
+                  )
+                })
+              }
+            </Geographies>
+            <Lines>
+              {
+                this.getFlights().map((flight, i) => (
+                  <Line line={{ coordinates: flight }} style={flightConfig}
+                    buildPath={buildCurve} key={i} />
+                ))
+              }
+            </Lines>
+          </ZoomableGroup>
+        </ComposableMap>
+      </BannerContainer>
     )
   }
 }

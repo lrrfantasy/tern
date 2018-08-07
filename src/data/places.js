@@ -2,8 +2,8 @@ export default [
   {
     id: 'indonesia',
     name: 'Indonesia',
-    zoomCenter: [120, 0],
-    scale: 300,
+    zoomCenter: [115, 0],
+    scale: 2.8,
     photoPlace: 'Taman Ayun Temple, Bali',
     photoTime: 'January 2007',
     places: [
@@ -17,8 +17,8 @@ export default [
   {
     id: 'uk',
     name: 'United Kingdom',
-    zoomCenter: [0, 55],
-    scale: 600,
+    zoomCenter: [-2, 55],
+    scale: 2.6,
     photoPlace: 'White Hall, London',
     photoTime: 'December 2009',
     places: [
@@ -48,7 +48,7 @@ export default [
     id: 'thailand',
     name: 'Thailand',
     zoomCenter: [98, 7],
-    scale: 600,
+    scale: 2.5,
     photoPlace: 'Patong, Phuket',
     photoTime: 'January 2012',
     places: [
@@ -63,7 +63,7 @@ export default [
     id: 'india',
     name: 'India',
     zoomCenter: [80, 20],
-    scale: 400,
+    scale: 2,
     photoPlace: 'Sri Krishna Temple, Hampi',
     photoTime: 'June 2012',
     places: [
@@ -78,7 +78,7 @@ export default [
     id: 'japan',
     name: 'Japan',
     zoomCenter: [135, 40],
-    scale: 600,
+    scale: 2.2,
     photoPlace: 'Akihabara, Tokyo',
     photoTime: 'February 2014',
     places: [
@@ -103,7 +103,7 @@ export default [
     id: 'australia',
     name: 'Australia',
     zoomCenter: [135, -30],
-    scale: 300,
+    scale: 1.7,
     photoPlace: 'Harbour Bridge, Sydney',
     photoTime: 'July 2014',
     places: [
@@ -128,7 +128,7 @@ export default [
     id: 'denmark',
     name: 'Russia & Scandinavia',
     zoomCenter: [22, 62],
-    scale: 400,
+    scale: 2.1,
     photoPlace: 'City Hall, Copenhagen',
     photoTime: 'October 2014',
     places: [
@@ -168,7 +168,7 @@ export default [
     id: 'japan-two',
     name: 'Japan',
     zoomCenter: [135, 40],
-    scale: 700,
+    scale: 2.5,
     photoPlace: 'Fushimi Inari Taisha, Kyoto',
     photoTime: 'August 2015',
     places: [
@@ -183,7 +183,7 @@ export default [
     id: 'usa',
     name: 'USA',
     zoomCenter: [-100, 35],
-    scale: 200,
+    scale: 1.5,
     photoPlace: 'Times Square, New York',
     photoTime: 'October 2015',
     places: [
@@ -198,7 +198,7 @@ export default [
     id: 'mauritius',
     name: 'Mauritius',
     zoomCenter: [57, -20],
-    scale: 200,
+    scale: 2,
     photoPlace: 'Caudan Waterfront, Port Louis',
     photoTime: 'February 2016',
     places: [
@@ -213,7 +213,7 @@ export default [
     id: 'south-korea',
     name: 'South Korea',
     zoomCenter: [126, 36],
-    scale: 700,
+    scale: 2.8,
     photoPlace: 'Myeong-dong, Seoul',
     photoTime: 'May, 2016',
     places: [
@@ -228,7 +228,7 @@ export default [
     id: 'japan-three',
     name: 'Japan',
     zoomCenter: [135, 30],
-    scale: 600,
+    scale: 2.5,
     photoPlace: 'Kamakura Koukoumae, Kamakura',
     photoTime: 'December 2016',
     places: [
@@ -248,7 +248,7 @@ export default [
     id: 'philippines',
     name: 'Philippines',
     zoomCenter: [121, 12],
-    scale: 600,
+    scale: 3,
     photoPlace: 'Bulabog Beach, Boracay',
     photoTime: 'May 2017',
     places: [
@@ -263,7 +263,7 @@ export default [
     id: 'japan-four',
     name: 'Japan',
     zoomCenter: [135, 40],
-    scale: 600,
+    scale: 2.4,
     photoPlace: 'Rurikouin, Kyoto',
     photoTime: 'November 2017',
     places: [
