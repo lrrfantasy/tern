@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Link } from 'react-router-dom'
+import { withRouter } from 'react-router'
 import styled from 'styled-components'
 
 import Map from '../Map'
@@ -49,9 +49,13 @@ const Subtitle = styled.h3`
   line-height: 22px;
 `
 
-export default class Place extends Component {
+class Place extends Component {
   static defaultProps = {
     places: []
+  }
+  handleClick = () => {
+    const { id } = this.props.place
+    this.props.history.push(`/${id}`)
   }
 
   render () {
@@ -62,19 +66,18 @@ export default class Place extends Component {
       backgroundImage: `url(${img})`
     }
     return (
-      <Link to={`/${id}`}>
-        <PlaceContainer>
-          <Cover>
-            <Map config={config} places={places} />
-          </Cover>
-          <Background style={bgStyle} />
-          <TitleGroup>
-            <Title>{name}</Title>
-            <Subtitle>{photoPlace}</Subtitle>
-            <Subtitle>{photoTime}</Subtitle>
-          </TitleGroup>
-        </PlaceContainer>
-      </Link>
+      <PlaceContainer onClick={this.handleClick}>
+        <Cover>
+          <Map config={config} places={places} />
+        </Cover>
+        <Background style={bgStyle} />
+        <TitleGroup>
+          <Title>{name}</Title>
+          <Subtitle>{photoPlace}</Subtitle>
+          <Subtitle>{photoTime}</Subtitle>
+        </TitleGroup>
+      </PlaceContainer>
     )
   }
 }
+export default withRouter(Place)
