@@ -12,5 +12,7 @@ export default [
   'DNK',
   'USA',
   'KOR',
-  'PHL'
+  'PHL',
+  'KEN',
+  'ETH'
 ]

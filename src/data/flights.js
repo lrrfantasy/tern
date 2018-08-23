@@ -23,7 +23,9 @@ export default {
     portlouis: [57.5041, -20.1644],
     seoul: [126.9780, 37.5665],
     naha: [127.6792, 26.2123],
-    boracay: [121.9189, 11.9804]
+    boracay: [121.9189, 11.9804],
+    addisababa: [38.7578, 8.9806],
+    nairobi: [36.8219, -1.2921],
   },
   routes: [
     { src: 'hongkong', dst: 'bali' },
@@ -48,6 +50,8 @@ export default {
     { src: 'naha', dst: 'tokyo' },
     { src: 'chengdu', dst: 'tokyo' },
     { src: 'chengdu', dst: 'boracay' },
-    { src: 'chengdu', dst: 'osaka' }
+    { src: 'chengdu', dst: 'osaka' },
+    { src: 'chengdu', dst: 'addisababa' },
+    { src: 'addisababa', dst: 'nairobi' },
   ]
 }

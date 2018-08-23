@@ -278,5 +278,25 @@ export default [
         longitude: 135.7683
       }
     ]
+  },
+  {
+    id: 'kenya',
+    name: 'Kenya & Ethiopia',
+    zoomCenter: [37, 3],
+    scale: 2.4,
+    photoPlace: 'Maasai Mara National Reserve, Narok',
+    photoTime: 'August 2018',
+    places: [
+      {
+        name: 'Nairobi',
+        latitude: -1.2921,
+        longitude: 36.8219
+      },
+      {
+        name: 'Addis Ababa',
+        latitude: 8.9806,
+        longitude: 38.7578
+      }
+    ]
   }
 ]
