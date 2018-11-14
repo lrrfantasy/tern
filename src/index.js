@@ -19,6 +19,7 @@ import JapanThree from './pages/JapanThree'
 import Philippines from './pages/Philippines'
 import JapanFour from './pages/JapanFour'
 import Kenya from './pages/Kenya'
+import AustraliaTwo from './pages/AustraliaTwo'
 
 import './index.css';
 
@@ -48,6 +49,7 @@ ReactDOM.render(
       <Route path='/philippines' component={Philippines} />
       <Route path='/japan-four' component={JapanFour} />
       <Route path='/kenya' component={Kenya} />
+      <Route path='/australia-two' component={AustraliaTwo} />
     </div>
   </Router>,
   document.getElementById('root')

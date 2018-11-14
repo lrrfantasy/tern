@@ -53,5 +53,6 @@ export default {
     { src: 'chengdu', dst: 'osaka' },
     { src: 'chengdu', dst: 'addisababa' },
     { src: 'addisababa', dst: 'nairobi' },
+    { src: 'chengdu', dst: 'melbourne' },
   ]
 }

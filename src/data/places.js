@@ -298,5 +298,20 @@ export default [
         longitude: 38.7578
       }
     ]
-  }
+  },
+  {
+    id: 'australia-two',
+    name: 'Australia',
+    zoomCenter: [144, -37],
+    scale: 1.7,
+    photoPlace: 'Yarra River, Melbourne',
+    photoTime: 'October 2018',
+    places: [
+      {
+        name: 'Melbourne',
+        latitude: -37.8136,
+        longitude: 144.9631
+      }
+    ]
+  },
 ]
