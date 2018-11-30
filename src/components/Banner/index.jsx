@@ -47,9 +47,9 @@ export default class Banner extends Component {
                   const countryConfig = {
                     fill: countries.includes(geography.id)
                       ? '#cd5c5c'
-                      : geography.id === 'CHN' ? '#f4a7b9' : 'transparent',
+                      : geography.id === 'CHN' ? '#f4a7b9' : 'rgba(255, 255, 255, 0.15)',
                     stroke: '#91989f',
-                    strokeWidth: 0.75,
+                    strokeWidth: 0.4,
                     outline: 'none',
                   }
                   const countryStyle = {

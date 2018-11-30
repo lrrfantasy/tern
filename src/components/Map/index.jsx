@@ -15,9 +15,9 @@ const ThumbnailContainer = styled.div`
 `
 
 const countryConfig = {
-  fill: 'transparent',
+  fill: 'rgba(255, 255, 255, 0.15)',
   stroke: '#91989f',
-  strokeWidth: 0.5,
+  strokeWidth: 0.4,
   outline: 'none',
 }
 const countryStyle = {
