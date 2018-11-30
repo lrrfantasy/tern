@@ -10,7 +10,7 @@ deploy:
   skip-cleanup: true
   keep-history: true
   local-dir: build
-  repo: lrrfantasy.github.io
+  repo: lrrfantasy/lrrfantasy.github.io
   target-branch: master
   on:
     branch: master
