@@ -6,10 +6,10 @@ import PlaceList from './components/PlaceList'
 export default class App extends Component {
   render () {
     return (
-      <div>
+      <main>
         <Banner />
         <PlaceList />
-      </div>
+      </main>
     )
   }
 }

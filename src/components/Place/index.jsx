@@ -4,7 +4,7 @@ import styled from 'styled-components'
 
 import Map from '../Map'
 
-const PlaceContainer = styled.div`
+const PlaceContainer = styled.li`
   position: relative;
   color: white;
   font-weight: lighter;

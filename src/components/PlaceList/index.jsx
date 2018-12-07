@@ -4,11 +4,11 @@ import Place from '../Place'
 import places from '../../data/places'
 
 export default () => (
-  <div>
+  <ol>
     {
       places.map((place, idx) => (
         <Place place={place} key={idx} />
       ))
     }
-  </div>
+  </ol>
 )

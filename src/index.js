@@ -4,24 +4,14 @@ import { BrowserRouter as Router, Route } from 'react-router-dom'
 
 import App from './App'
 
-import Indonesia from './pages/Indonesia'
-import UK from './pages/UK'
-import Thailand from './pages/Thailand'
-import India from './pages/India'
-import Japan from './pages/Japan'
-import Australia from './pages/Australia'
-import Denmark from './pages/Denmark'
-import JapanTwo from './pages/JapanTwo'
-import USA from './pages/USA'
-import Mauritius from './pages/Mauritius'
-import SouthKorea from './pages/SouthKorea'
-import JapanThree from './pages/JapanThree'
-import Philippines from './pages/Philippines'
-import JapanFour from './pages/JapanFour'
-import Kenya from './pages/Kenya'
-import AustraliaTwo from './pages/AustraliaTwo'
+import {
+  Indonesia, UK, Thailand, India,
+  Japan, Australia, Denmark, JapanTwo, USA,
+  Mauritius, SouthKorea, JapanThree, Philippines, JapanFour,
+  Kenya, AustraliaTwo
+} from './pages'
 
-import './index.css';
+import './index.css'
 
 const ScrollTop = () => {
   window.scrollTo(0, 0)
