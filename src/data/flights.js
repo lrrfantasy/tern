@@ -26,6 +26,7 @@ export default {
     boracay: [121.9189, 11.9804],
     addisababa: [38.7578, 8.9806],
     nairobi: [36.8219, -1.2921],
+    singapore: [103.8198, 1.3521],
   },
   routes: [
     { src: 'hongkong', dst: 'bali' },
@@ -54,5 +55,6 @@ export default {
     { src: 'chengdu', dst: 'addisababa' },
     { src: 'addisababa', dst: 'nairobi' },
     { src: 'chengdu', dst: 'melbourne' },
+    { src: 'chengdu', dst: 'singapore' }
   ]
 }

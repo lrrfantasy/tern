@@ -14,5 +14,6 @@ export default [
   'KOR',
   'PHL',
   'KEN',
-  'ETH'
+  'ETH',
+  'SGP',
 ]

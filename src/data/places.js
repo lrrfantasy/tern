@@ -314,4 +314,19 @@ export default [
       }
     ]
   },
+  {
+    id: 'singapore',
+    name: 'Singapore',
+    zoomCenter: [103, 1],
+    scale: 4,
+    photoPlace: 'Merlion, Singapore',
+    photoTime: 'December 2018',
+    places: [
+      {
+        name: 'Singapore',
+        latitude: 1.3521,
+        longitude: 103.8198
+      }
+    ]
+  }
 ]
