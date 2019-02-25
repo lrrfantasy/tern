@@ -8,7 +8,7 @@ import {
   Indonesia, UK, Thailand, India,
   Japan, Australia, Denmark, JapanTwo, USA,
   Mauritius, SouthKorea, JapanThree, Philippines, JapanFour,
-  Kenya, AustraliaTwo, Singapore,
+  Kenya, AustraliaTwo, Singapore, ThailandTwo,
 } from './pages'
 
 import './index.css'
@@ -41,6 +41,7 @@ ReactDOM.render(
       <Route path='/kenya' component={Kenya} />
       <Route path='/australia-two' component={AustraliaTwo} />
       <Route path='/singapore' component={Singapore} />
+      <Route path='/thailand-two' component={ThailandTwo} />
     </div>
   </Router>,
   document.getElementById('root')

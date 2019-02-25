@@ -328,5 +328,25 @@ export default [
         longitude: 103.8198
       }
     ]
+  },
+  {
+    id: 'thailand-two',
+    name: 'Thailand',
+    zoomCenter: [100, 13],
+    scale: 3,
+    photoPlace: 'Wat Yai Chai Mongkhon, Ayutthaya',
+    photoTime: 'February 2019',
+    places: [
+      {
+        name: 'Bangkok',
+        latitude: 13.7534,
+        longitude: 100.5048
+      },
+      {
+        name: 'Pattaya',
+        latitude: 12.9347,
+        longitude: 100.9017
+      }
+    ]
   }
 ]

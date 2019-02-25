@@ -27,6 +27,7 @@ export default {
     addisababa: [38.7578, 8.9806],
     nairobi: [36.8219, -1.2921],
     singapore: [103.8198, 1.3521],
+    bangkok: [100.5048, 13.7534],
   },
   routes: [
     { src: 'hongkong', dst: 'bali' },
@@ -55,6 +56,7 @@ export default {
     { src: 'chengdu', dst: 'addisababa' },
     { src: 'addisababa', dst: 'nairobi' },
     { src: 'chengdu', dst: 'melbourne' },
-    { src: 'chengdu', dst: 'singapore' }
+    { src: 'chengdu', dst: 'singapore' },
+    { src: 'chengdu', dst: 'bangkok' },
   ]
 }

@@ -19,3 +19,4 @@ export const JapanFour = historise('japan-four', [0, [1, 2], 3, 4, [5, 6], 7, 8,
 export const Kenya = historise('kenya', [0, 1, [2, 3], 4, [5, 6], 7, [8, 9], 10, [11, 12], 13, [14, 15], 16])
 export const AustraliaTwo = historise('australia-two', [0, 1, 2, [3, 4], 5, 6, [7, 8]])
 export const Singapore = historise('singapore', [0, 1, [2, 3], 4, [5, 6], [7, 8]])
+export const ThailandTwo = historise('thailand-two', [0, [1, 2], 3, 4])
