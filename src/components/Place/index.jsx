@@ -66,7 +66,7 @@ class Place extends Component {
       backgroundImage: `url(${img})`
     }
     return (
-      <PlaceContainer onClick={this.handleClick}>
+      <PlaceContainer id={id} onClick={this.handleClick}>
         <Cover>
           <Map config={config} places={places} />
         </Cover>

@@ -1,15 +1,15 @@
-import React, { Component } from 'react'
+import React from 'react'
 
+import Navigation from './components/Navigation'
 import Banner from './components/Banner'
 import PlaceList from './components/PlaceList'
 
-export default class App extends Component {
-  render () {
-    return (
-      <main>
-        <Banner />
-        <PlaceList />
-      </main>
-    )
-  }
-}
+const App = () => (
+  <main>
+    <Navigation />
+    <Banner />
+    <PlaceList />
+  </main>
+)
+
+export default App

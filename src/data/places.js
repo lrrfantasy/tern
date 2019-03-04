@@ -1,6 +1,7 @@
 export default [
   {
     id: 'indonesia',
+    flag: '🇮🇩',
     name: 'Indonesia',
     zoomCenter: [115, 0],
     scale: 2.8,
@@ -16,6 +17,7 @@ export default [
   },
   {
     id: 'uk',
+    flag: '🇬🇧',
     name: 'United Kingdom',
     zoomCenter: [-2, 55],
     scale: 2.6,
@@ -46,6 +48,7 @@ export default [
   },
   {
     id: 'thailand',
+    flag: '🇹🇭',
     name: 'Thailand',
     zoomCenter: [98, 7],
     scale: 2.5,
@@ -61,6 +64,7 @@ export default [
   },
   {
     id: 'india',
+    flag: '🇮🇳',
     name: 'India',
     zoomCenter: [80, 20],
     scale: 2,
@@ -76,6 +80,7 @@ export default [
   },
   {
     id: 'japan',
+    flag: '🇯🇵',
     name: 'Japan',
     zoomCenter: [135, 40],
     scale: 2.2,
@@ -101,6 +106,7 @@ export default [
   },
   {
     id: 'australia',
+    flag: '🇦🇺',
     name: 'Australia',
     zoomCenter: [135, -30],
     scale: 1.7,
@@ -126,6 +132,7 @@ export default [
   },
   {
     id: 'denmark',
+    flag: '🇩🇰',
     name: 'Russia & Scandinavia',
     zoomCenter: [22, 62],
     scale: 2.1,
@@ -166,6 +173,7 @@ export default [
   },
   {
     id: 'japan-two',
+    flag: '🇯🇵',
     name: 'Japan',
     zoomCenter: [135, 40],
     scale: 2.5,
@@ -181,6 +189,7 @@ export default [
   },
   {
     id: 'usa',
+    flag: '🇺🇸',
     name: 'USA',
     zoomCenter: [-100, 35],
     scale: 1.5,
@@ -196,6 +205,7 @@ export default [
   },
   {
     id: 'mauritius',
+    flag: '🇲🇺',
     name: 'Mauritius',
     zoomCenter: [57, -20],
     scale: 2,
@@ -211,6 +221,7 @@ export default [
   },
   {
     id: 'south-korea',
+    flag: '🇰🇷',
     name: 'South Korea',
     zoomCenter: [126, 36],
     scale: 2.8,
@@ -226,6 +237,7 @@ export default [
   },
   {
     id: 'japan-three',
+    flag: '🇯🇵',
     name: 'Japan',
     zoomCenter: [135, 30],
     scale: 2.5,
@@ -246,6 +258,7 @@ export default [
   },
   {
     id: 'philippines',
+    flag: '🇵🇭',
     name: 'Philippines',
     zoomCenter: [121, 12],
     scale: 3,
@@ -261,6 +274,7 @@ export default [
   },
   {
     id: 'japan-four',
+    flag: '🇯🇵',
     name: 'Japan',
     zoomCenter: [135, 40],
     scale: 2.4,
@@ -281,6 +295,7 @@ export default [
   },
   {
     id: 'kenya',
+    flag: '🇰🇪',
     name: 'Kenya & Ethiopia',
     zoomCenter: [37, 3],
     scale: 2.4,
@@ -301,6 +316,7 @@ export default [
   },
   {
     id: 'australia-two',
+    flag: '🇦🇺',
     name: 'Australia',
     zoomCenter: [144, -37],
     scale: 1.7,
@@ -316,6 +332,7 @@ export default [
   },
   {
     id: 'singapore',
+    flag: '🇸🇬',
     name: 'Singapore',
     zoomCenter: [103, 1],
     scale: 4,
@@ -331,6 +348,7 @@ export default [
   },
   {
     id: 'thailand-two',
+    flag: '🇹🇭',
     name: 'Thailand',
     zoomCenter: [100, 13],
     scale: 3,
