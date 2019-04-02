@@ -366,5 +366,21 @@ export default [
         longitude: 100.9017
       }
     ]
-  }
+  },
+  {
+    id: 'japan-five',
+    flag: '🇯🇵',
+    name: 'Japan',
+    zoomCenter: [135, 30],
+    scale: 2.5,
+    photoPlace: 'Ueno Park, Tokyo',
+    photoTime: 'March 2019',
+    places: [
+      {
+        name: 'Tokyo',
+        latitude: 35.6833,
+        longitude: 139.6833
+      },
+    ]
+  },
 ]
