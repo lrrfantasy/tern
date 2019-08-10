@@ -58,5 +58,7 @@ export default {
     { src: 'chengdu', dst: 'melbourne' },
     { src: 'chengdu', dst: 'singapore' },
     { src: 'chengdu', dst: 'bangkok' },
+    { src: 'chengdu', dst: 'sydney' },
+    { src: 'sydney', dst: 'singapore' },
   ]
 }

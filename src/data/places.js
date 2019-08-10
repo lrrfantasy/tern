@@ -383,4 +383,20 @@ export default [
       },
     ]
   },
+  {
+    id: 'singapore-two',
+    flag: '🇸🇬',
+    name: 'Singapore',
+    zoomCenter: [103, 1],
+    scale: 4,
+    photoPlace: 'Singapore Indoor Stadium, Singapore',
+    photoTime: 'July 2019',
+    places: [
+      {
+        name: 'Singapore',
+        latitude: 1.3521,
+        longitude: 103.8198
+      }
+    ]
+  },
 ]
