@@ -4,7 +4,6 @@ import { Section, LinkedImage, Image, BackButton } from '../components/PageLayou
 const stringify = num => num < 10 ? `0${num}` : `${num}`
 
 export const buildLayout = (id, layouts, history) => {
-  console.log(id);
   const images = layouts.map(section => {
     if (section === 0) {
       return <Image src={require(`../images/${id}/${stringify(section)}.jpg`)} key={section} />

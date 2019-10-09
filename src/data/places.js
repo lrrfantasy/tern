@@ -399,4 +399,20 @@ export default [
       }
     ]
   },
+  {
+    id: 'south-korea-two',
+    flag: '🇰🇷',
+    name: 'South Korea',
+    zoomCenter: [126, 36],
+    scale: 2.8,
+    photoPlace: 'Itaewon, Seoul',
+    photoTime: 'September, 2019',
+    places: [
+      {
+        name: 'Seoul',
+        latitude: 37.5665,
+        longitude: 126.9780
+      }
+    ]
+  },
 ]
